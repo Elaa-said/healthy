@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>Products - Healthy&Bnin</title>
+     <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+         /*footer*/
+         .footer{
+    display: flex;
+    justify-content: space-around;
+   background-color: black;
+   font-size: 16px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: white;
+   width: 100%;
+   
+     }
+ h3{
+     display: flex;
+     justify-content: center;
+ }
+ .start{
+     display: flex;
+     justify-content: start;
+ }
+ /*navbar*/
+ .nav{
+     display: flex;
+   justify-content: space-around;
+     padding: 25px;
+ }
+ nav ul li{
+     display:inline-block;
+     margin-right: 100px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ .logo{
+     display: flex;
+     justify-content: center;
+     padding: 30px;
+ }
+ a{
+     text-decoration: none;
+     color: green;
+     font-size: 19px;
+
+ }
+ /*home*/
+ .firsttitle{
+     background-image: url(/res/pic1.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     /*h
+     padding: 800px 100px;
+     margin: 100px;
+     background-size: ;
+     background-position: ;
+     width: ;
+     height: ;
+     box-shadow: 0px 0px 10px 2px grey;
+     text-align;
+     */
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 15px;
+     font-weight: 100;
+     margin: 30px;
+ }
+ .flexx{
+     display: flex;
+     justify-content: space-around;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     text-align: center;
+     padding-right: 10px;
+
+ }
+ .secondtitle{
+     display: flex;
+     justify-content: center;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     padding: 60px 0 60px 0;
+     
+ }
+ ul li{
+     list-style: none;
+ }
+ .flex2{
+     display: flex;
+     justify-content: space-around;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+ }
+ /* shopping cart */
+ .names {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: black;
+            font-size: 15px;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            color: gray;
+            font-size: 50px;
+            text-align: center;
+            /* font-weight:  */
+        }
+        h5{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: black;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .flexbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .cart {
+            margin: 50px auto;
+        }
+
+        .down {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        th {
+            text-align: left;
+            padding: 5px;
+            color: white;
+            font-weight: normal;
+            background: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        td {
+            padding: 10px 5px
+        }
+
+        td input {
+            width: 40px;
+            height: 30px;
+            padding: 5px;
+        }
+
+        td a {
+            color: palevioletred;
+            font-size: 12px;
+        }
+
+        td img {
+            width: 80;
+            height: 80px;
+            margin-right: 10px;
+
+        }
+
+        .bigtitle {
+            text-align: center;
+            font-size: 70px;
+        }
+
+        .lucida {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: initial;
+        }
+
+        .button {
+            position: relative;
+            display: inline-block;
+            background: yellowgreen;
+            color: white;
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 30px;
+            padding: 8px 30px;
+            margin: 05px 0px 70px 0px;
+        }
+        .button:hover{
+            background-color: tomato;
+        }
+
+        .total {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .totaltable {
+            border-top: 3px solid black;
+            width: 200%;
+            max-width: 400px;
+        }
+
+        .totalprice {
+            text-align: left;
+            font-size: 25px;
+        }
+
+        .totalprice1 {
+            text-align: left;
+            font-size: 25px;
+        }
+
+        td:last-child {
+            text-align: right;
+        }
+
+        .button2 {
+            position: relative;
+            width: 160px;
+            padding: 20px;
+            font-size: 15px;
+            color: yellowgreen;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 800;
+            border: 5px solid yellowgreen;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            cursor: pointer;
+            border-radius: 100px;
+            margin: 80px 0px;
+            background-color: white;
+        }
+        
+
+        .button2:hover {
+            box-shadow: 0 5px 50px 0;
+        }
+
+        .box {
+            padding: 60px;
+            background-image: url(res/p1.jp);
+            background-repeat: no-repeat;
+        }
+
+        .button3 {
+            position: relative;
+            width: 80px;
+            padding: 3px;
+            font-size: 10px;
+            color: tomato;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 10px;
+            border: 2px solid tomato;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 3px;
+            background-color: white;
+        }
+
+        .div {
+            display: flex;
+            justify-content: center;
+        }
+
+        .flexbox1 {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        }
+
+        .img {
+            border-radius: 8px;
+        }
+        @media only screen and (max-width: 600px) {
+       .flexbox1{
+           display: flex;
+           flex-direction: row;
+           align-content: center;
+       }
+       .nav{
+     display: flex;
+     flex-direction: column;
+     align-content: flex-start;
+     padding: 10px;
+ }
+ .logo{
+    display: flex;
+     justify-content: start;
+     padding: 10px;
+ }
+ }
+      </style>
+    </head>
+    <body>
+        <div class="logo" id="Home">
+            <img src="res/logo.PNG">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="#About">About us</a></li
+                    
+                    >
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#Contact">Contacts</a></li>
+            </ul>
+        </nav>
+    <main class="flexbox1">
+        <div class="flexbox">
+            <h3 class="names">Almond Butter</h3>
+            <img src="res/pp1.PNG" class="img">
+            <div>
+                <h5>20dt</h5>
+                <button class="button">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="flexbox">
+            <h3 class="names">Honey</h3>
+            <img src="res/pp22.jpg" class="img">
+            <div>
+                <h5>18dt</h5>
+                <button class="button">ADD TO CART</button>
+            </div>
+        </div>
+
+        <div class="flexbox">
+            <h3 class="names">Chocolate Hazelnut</h3>
+            <img src="res/pp3.PNG">
+            <div>
+                <h5>19dt</h5>
+                <button class="button">ADD TO CART</button>
+            </div>
+        </div>
+    </main>
+    <main class="flexbox1">
+        <div class="flexbox">
+            <h3 class="names">Chocolate Granola</h3>
+            <img src="res/pp4.jpg">
+            <div>
+                <h5>22dt</h5>
+                <button class="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexbox">
+            <h3 class="names">Almond Milk</h3>
+            <img src="res/pp5.jpg">
+            <div>
+                <h5>25dt</h5>
+                <button class="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexbox">
+            <h3 class="names">Strawberry Jam</h3>
+            <img src="res/pp6.jpg">
+            <div>
+                <h5>8dt</h5>
+                <button class="button">ADD TO CART</button>
+            </div>
+        </div>
+    </main>
+    <main class="flexbox1">
+        <div class="flexbox">
+            <h3 class="names">Strawberry Granola</h3>
+            <img src="res/pp7.jpg">
+            <div>
+                <h5>15dt</h5>
+                <button class="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexbox">
+            <h3 class="names">Protein Bar</h3>
+            <img src="res/pp8.jpg">
+            <div>
+                <h5>3dt</h5>
+                <button class="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="flexbox">
+            <h3 class="names">Protein Bar</h3>
+            <img src="res/pp9.jpg">
+            <div>
+                <h5>2.5dt</h5>
+                <button class="button">ADD TO CART</button>
+            </div>
+        </div>
+    </main>
+    <div>
+        </main>
+        <h2 class="cart">CART</h2>
+        <div>
+            <table class="table">
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+                <div>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="res/pp1.PNG">
+                            <div class="lucida">
+                                <p>Almond Butter</p>
+                                <small>Price: 20dt</small>
+                                <br>
+                                <br>
+                                <button class="button3" onclick="removeelem(this)">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" onchange="qte(20,this.value)"></td>
+                    <td class="prices">20</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="res/pp22.jpg">
+                            <div class="lucida">
+                                <p>Honey</p>
+                                <small>Price: 18dt</small>
+                                <br>
+                                <br>
+                                <button class="button3" onclick="removeelem(this)">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" onchange="qte(18,this.value)"></td>
+                    <td class="prices">18</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="res/pp3.PNG">
+                            <div class="lucida">
+                                <p>Chocolate Hazelnut</p>
+                                <small>Price: 19dt </small>
+                                <br>
+                                <br>
+                                <button class="button3" onclick="removeelem(this)">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" onchange="qte(19,this.value)"></td>
+                    <td class="prices">19</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="res/pp4.jpg">
+                            <div class="lucida">
+                                <p>Chocolate Granola</p>
+                                <small>Price:22dt</small>
+                                <br>
+                                <br>
+                                <button class="button3" onclick="removeelem(this)">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" onchange="qte(22,this.value)"></td>
+                    <td class="prices">22</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="res/pp5.jpg">
+                            <div class="lucida">
+                                <p>Almond Milk</p>
+                                <small>Price:25dt </small>
+                                <br>
+                                <br>
+                                <button class="button3" onclick="removeelem(this)">Remove</button>
+                            </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" onchange="qte(25,this)"></td>
+                    <td class="prices">25</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="res/pp6.jpg">
+                            <div class="lucida">
+                                <p>Strawberry Jam</p>
+                                <small>Price: 8dt</small>
+                                <br>
+                                <br>
+                                <button class="button3" onclick="removeelem(this)">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" onchange="qte(8,this)"></td>
+                    <td class="prices">8</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="res/pp7.jpg">
+                            <div class="lucida">
+                                <p>Strawberry Granola</p>
+                                <small>Price: 15dt</small>
+                                <br>
+                                <br>
+                                <button class="button3" onclick="removeelem(this)">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" onchange="qte(15,this)"></td>
+                    <td class="prices">15</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="res/pp8.jpg">
+                            <div class="lucida">
+                                <p>Protein Bar</p>
+                                <small>Price: 3dt</small>
+                                <br>
+                                <br>
+                                <button class="button3" onclick="removeelem(this)">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" onchange="qte(3,this)"></td>
+                    <td class="prices">3</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="res/pp9.jpg">
+                            <div class="lucida">
+                                <p>Protein Bar</p>
+                                <small>Price: 2.5dt</small>
+                                <br>
+                                <br>
+                                <button class="button3" onclick="removeelem(this)">Remove</button>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1" onchange="qte(4,this)"></td>
+                    <td class="prices">2.5</td>
+                </tr>
+            </table>
+            <div class="total">
+                <table class="totaltable">
+                    <tr>
+                        <td class="totalprice1">Total</td>
+                        <td id="prixtot" class="totalprice">134dt</td>
+                        <br>
+                        <br>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </div>
+        <div class="div">
+            <button class="button2">Purchase</button>
+        </div>
+    </div>
+    
+        
+        
+<div class="footer" id="Contact">
+            <div>
+                    <h3 class="start">Download our app</h3>
+                    <p>Download our app for Android and ios mobile phone.</p>
+                    <div>
+                        <img src="res/papa.png">
+                    </div>
+            </div>
+                <div>
+                    <img src="">
+                    <br>
+                    <br>
+                    <p>Our purpose is to provide you with fresh and healthy
+                        <br>
+                     items and a responsible ingredient sourcing.</p>
+                     <br>
+                     <br>
+                     <p>If you want to Join our team 
+                         <br>
+                        contact us on healthy&bnin@gmail.com</p>
+                </div>
+           <div>
+                <h3>Quick links</h3>
+                <ul>
+                    <br>
+                    <br>
+                    <li>Deliveries</li>
+                    <li>Healthy&Bnin team</li>
+                    <li>Join Us</li>
+                    <li>Make a request</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow us</h3>
+                <ul>
+                    <br>
+                    <br>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+</div>
+<script language="javascript">
+    function removeelem(b) {
+        console.log(b)
+        b.parentElement.parentElement.parentElement.parentElement.remove()
+        // console.log(thebutton.parentElement.parentElement)
+    }
+    function total() {
+        var price = document.getElementsByClassName("prices")
+
+        for (i = 0; i < price.length; i++) {
+            sum = 0;
+            sum += price[i].innerHTML;
+        }
+        document.getElementById("prixtot").innerHTML = sum + " dt"
+    }
+    function qte(q, p) {
+        p.parentElement.parentElement.lastElementChild.innerHTML = q * p.value;
+        //  console.log(p.parentElement.parentElement.lastElementChild.innerHTML);
+        total()
+    }
+</script>
+
+    </body>
+</html>
